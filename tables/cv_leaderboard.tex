@@ -1,0 +1,27 @@
+% FILE: tables/cv_leaderboard.tex
+
+% Use the table* environment to span the full page width
+\begin{table*}[t] 
+\centering
+\caption{Cross-validation leaderboard (sorted by Overall MAE).}
+\label{tab:cv_leaderboard}
+\begin{tabular}{@{}lccccccc@{}}
+\toprule
+% With the full page width, we no longer need complex headers
+Candidate & $K$ & $\tau$ [s] & $B^+$ [V] & $B^-$ [V] & $\theta$ [s] & MAE [RPM] & Mean Step MAE [RPM] \\
+\midrule
+Step13 & 35.248 & 0.283 & -1.550 & -1.950 & 0.031 & 2.209 & 16.202 \\
+Step15 & 34.838 & 0.148 & -1.550 & -1.950 & 0.100 & 2.225 & 16.363 \\
+Step7 & 35.178 & 0.149 & -1.550 & -1.950 & 0.100 & 2.284 & 16.306 \\
+Step12 & 35.309 & 0.337 & -1.550 & -1.950 & 0.012 & 2.287 & 16.290 \\
+Step6 & 33.252 & 0.300 & -1.725 & -2.175 & 0.042 & 2.622 & 17.098 \\
+Step2 & 32.814 & 0.576 & -1.800 & -2.275 & 0.000 & 3.725 & 18.229 \\
+Step5 & 38.242 & 0.300 & -1.250 & -1.575 & 0.012 & 4.289 & 16.242 \\
+Step10 & 31.072 & 0.366 & -1.950 & -2.425 & 0.021 & 4.460 & 18.659 \\
+Step4 & 40.316 & 0.368 & -1.025 & -1.400 & 0.000 & 6.396 & 16.512 \\
+Step14 & 27.510 & 0.285 & -2.350 & -2.900 & 0.071 & 7.838 & 21.023 \\
+Step8 & 47.680 & 0.276 & -0.625 & -0.925 & 0.019 & 13.941 & 18.495 \\
+Step11 & 18.073 & 0.279 & -4.375 & -5.150 & 0.113 & 17.509 & 29.145 \\
+\bottomrule
+\end{tabular}
+\end{table*}
